@@ -7,3 +7,4 @@ Various tutorial projects for languages, frameworks, and systems that I have bee
 ### - [Rust](https://www.rust-lang.org/):
 
 - [minigrep](./minigrep/): A miniature version of the `grep` command in Rust.
+- [http-server](./http-server/): A multi-threaded HTTP server with ThreadPool implementation.
