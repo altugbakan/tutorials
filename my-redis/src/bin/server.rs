@@ -1,5 +1,6 @@
 use bytes::Bytes;
-use mini_redis::{Connection, Frame};
+use mini_redis::Frame;
+use my_redis::Connection;
 use std::collections::HashMap;
 use std::sync::{Arc, Mutex};
 use tokio::net::{TcpListener, TcpStream};
@@ -30,8 +31,6 @@ async fn main() {
 async fn process(socket: TcpStream, db: Db) {
     use mini_redis::Command::{self, Get, Set};
 
-    // Connection, provided by `mini-redis`, handles parsing frames from
-    // the socket
     let mut connection = Connection::new(socket);
 
     while let Some(frame) = connection.read_frame().await.unwrap() {
