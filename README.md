@@ -6,8 +6,8 @@ Various tutorial projects for languages, frameworks, and systems that I have bee
 
 ### [Rust](https://www.rust-lang.org/):
 
-- [minigrep](./minigrep/): A miniature version of the `grep` command.
-- [http-server](./http-server/): A multi-threaded HTTP server with ThreadPool implementation.
+- [minigrep](./rust/minigrep/): A miniature version of the `grep` command.
+- [http-server](./rust/http-server/): A multi-threaded HTTP server with ThreadPool implementation.
 
 #### [Tokio](https://tokio.rs/):
-- [my-redis](./my-redis/): A [Redis](https://redis.io/) client and server implementation.
+- [my-redis](./rust/tokio/my-redis/): A [Redis](https://redis.io/) client and server implementation.
