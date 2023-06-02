@@ -18,4 +18,4 @@ Various tutorial projects for languages, frameworks, and systems that I have bee
 
 #### [Angular](https://angular.io/):
 
-- [fairhouse](./typescript/fairhouse/): An housing app that features the ability to view home listings based on user search.
+- [fairhouse](./typescript/angular/fairhouse/): An housing app that features the ability to view home listings based on user search.
