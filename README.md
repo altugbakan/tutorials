@@ -14,6 +14,12 @@ Various tutorial projects for languages, frameworks, and systems that I have bee
 - [my-redis](./rust/tokio/my-redis/): A [Redis](https://redis.io/) client and server implementation.
 - [mini-tokio](./rust/tokio/mini-tokio/): A simple implementation of the Tokio runtime.
 
+### [JavaScript](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/):
+
+#### [Chrome Extensions](https://developer.chrome.com/docs/extensions/):
+
+- [reading-time](./javascript/chrome-extension/reading-time/): A Chrome extension for inserting estimated reading time to Google documentation websites.
+
 ### [TypeScript](https://www.typescriptlang.org/):
 
 #### [Angular](https://angular.io/):
