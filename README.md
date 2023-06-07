@@ -18,7 +18,8 @@ Various tutorial projects for languages, frameworks, and systems that I have bee
 
 #### [Chrome Extensions](https://developer.chrome.com/docs/extensions/):
 
-- [reading-time](./javascript/chrome-extension/reading-time/): A Chrome extension for inserting estimated reading time to Google documentation websites.
+- [reading-time](./javascript/chrome-extension/reading-time/): An extension for inserting estimated reading time to Google documentation websites.
+- [focus-mode](./javascript/chrome-extension/focus-mode/): An extension for removing unneeded clutter on the Google documentation websites.
 
 ### [TypeScript](https://www.typescriptlang.org/):
 
