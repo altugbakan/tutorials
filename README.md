@@ -26,3 +26,8 @@ Various tutorial projects for languages, frameworks, and systems that I have bee
 #### [Angular](https://angular.io/):
 
 - [fairhouse](./typescript/angular/fairhouse/): An housing app that features the ability to view home listings based on user search.
+
+### [Full Stack](https://www.coursera.org/articles/full-stack-developer):
+
+- [superhero](./full-stack/superhero/): An app that lists Super-Hero data.
+  - [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet) + [Angular](https://angular.io/) + [SQL Server](https://www.microsoft.com/en-us/sql-server/)
