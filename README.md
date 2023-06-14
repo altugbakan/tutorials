@@ -29,6 +29,8 @@ Various tutorial projects for languages, frameworks, and systems that I have bee
 
 - [fairhouse](./typescript/angular/fairhouse/): An housing app that features the ability to view home listings based on user search.
 
+- [tic-tac-toe](./typescript/angular/tic-tac-toe/): A tic-tac-toe game built with [Angular Material](https://material.angular.io/).
+
 ### [Full Stack](https://www.coursera.org/articles/full-stack-developer):
 
 - [super-hero](./full-stack/super-hero/): An app that lists Super-Hero data.
