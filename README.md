@@ -16,6 +16,8 @@ Various tutorial projects for languages, frameworks, and systems that I have bee
 
 ### [JavaScript](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/):
 
+- [astro-blog](./javascript/astro-blog/): A blog website built with [Astro](https://astro.build/).
+
 #### [Chrome Extensions](https://developer.chrome.com/docs/extensions/):
 
 - [reading-time](./javascript/chrome-extension/reading-time/): An extension for inserting estimated reading time to Google documentation websites.
