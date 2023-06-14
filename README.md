@@ -31,5 +31,5 @@ Various tutorial projects for languages, frameworks, and systems that I have bee
 
 ### [Full Stack](https://www.coursera.org/articles/full-stack-developer):
 
-- [superhero](./full-stack/superhero/): An app that lists Super-Hero data.
+- [super-hero](./full-stack/super-hero/): An app that lists Super-Hero data.
   - [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet) + [Angular](https://angular.io/) + [SQL Server](https://www.microsoft.com/en-us/sql-server/)
