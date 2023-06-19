@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tutorial-project-82e96": {
+      "hosting": {
+        "angular-firestarter": [
+          "tutorial-project-82e96"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tutorial-project-82e96"
+  }
+}

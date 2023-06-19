@@ -34,4 +34,9 @@ Various tutorial projects for languages, frameworks, and systems that I have bee
 ### [Full Stack](https://www.coursera.org/articles/full-stack-developer):
 
 - [super-hero](./full-stack/super-hero/): An app that lists Super-Hero data.
+
   - [ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet) + [Angular](https://angular.io/) + [SQL Server](https://www.microsoft.com/en-us/sql-server/)
+
+- [angular-firestarter](./full-stack/angular-firestarter/): An app with a Kanban Board and User Authentication.
+
+  - [Angular](https://angular.io/) + [Firebase](https://firebase.google.com/)
