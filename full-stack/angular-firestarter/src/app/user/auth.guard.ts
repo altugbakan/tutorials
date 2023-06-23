@@ -5,18 +5,15 @@ import {
   RouterStateSnapshot,
 } from '@angular/router';
 import { SnackService } from '../services/snack.service';
-import { Injectable, inject } from '@angular/core';
+import { inject } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root',
-})
 class AuthGuard {
   constructor(private afAuth: Auth, private snack: SnackService) {}
 
-  async canActivate(
-    next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot
-  ): Promise<boolean> {
+  canActivate(
+    _next: ActivatedRouteSnapshot,
+    _state: RouterStateSnapshot
+  ): boolean {
     const user = this.afAuth.currentUser;
     const isLoggedIn = !!user;
     if (!isLoggedIn) {
@@ -27,5 +24,6 @@ class AuthGuard {
 }
 
 export const authGuard: CanActivateFn = (route, state) => {
-  return inject(AuthGuard).canActivate(route, state);
+  const guard = new AuthGuard(inject(Auth), inject(SnackService));
+  return guard.canActivate(route, state);
 };
