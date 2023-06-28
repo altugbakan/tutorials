@@ -13,9 +13,11 @@ import {
   orderBy,
   getDocs,
   writeBatch,
+  collectionChanges,
+  collectionData,
 } from '@angular/fire/firestore';
 import { Board, Task } from './board.model';
-import { Observable, from, of, switchMap } from 'rxjs';
+import { Observable, from, map, of, switchMap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -59,14 +61,7 @@ export class BoardService {
         where('uid', '==', user?.uid),
         orderBy('priority')
       );
-      return from(getDocs(q)).pipe(
-        switchMap((snapshot) => {
-          const boards = snapshot.docs.map(
-            (doc) => ({ id: doc.id, ...doc.data() } as Board)
-          );
-          return of(boards);
-        })
-      );
+      return collectionData(q, { idField: 'id' });
     } else {
       return of([]);
     }
