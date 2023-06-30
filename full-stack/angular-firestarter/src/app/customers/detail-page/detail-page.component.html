@@ -1,11 +1,6 @@
 <h1>Detail Page</h1>
 
 <mat-card>
-  <p>
-    This content is server rendered with Angular Universal, NestJS, and Google
-    Cloud Run.
-  </p>
-
   Paste URL:
   <pre>https://firestarter.fireship.io/customers/{{ customerId }}</pre>
 
@@ -22,13 +17,13 @@
 
 <mat-card *ngIf="customer | async as cust">
   <mat-card-header>
-    <mat-card-title>{{ cust.name }}</mat-card-title>
+    <mat-card-title>{{ cust.get("name") }}</mat-card-title>
     <mat-card-subtitle>Customer Details</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image [src]="cust.image" />
+  <img mat-card-image [src]="cust.get('image')" />
   <mat-card-content>
     <p>
-      {{ cust.bio }}
+      {{ cust.get("bio") }}
     </p>
   </mat-card-content>
 </mat-card>

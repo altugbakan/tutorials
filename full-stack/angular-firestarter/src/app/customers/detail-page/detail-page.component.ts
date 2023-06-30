@@ -1,12 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {
+  DocumentData,
+  DocumentSnapshot,
   Firestore,
-  collection,
-  collectionChanges,
-  collectionData,
   doc,
-  query,
-  where,
+  docSnapshots,
 } from '@angular/fire/firestore';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, tap } from 'rxjs';
@@ -19,7 +17,7 @@ import { SeoService } from 'src/app/services/seo.service';
 })
 export class DetailPageComponent implements OnInit {
   customerId: string | null = null;
-  customer: Observable<any> | undefined;
+  customer: Observable<DocumentSnapshot<DocumentData>> | undefined;
 
   constructor(
     private route: ActivatedRoute,
@@ -30,18 +28,17 @@ export class DetailPageComponent implements OnInit {
   ngOnInit(): void {
     this.customerId = this.route.snapshot.paramMap.get('id');
 
-    const q = query(
-      collection(this.db, 'boards'),
-      where('uid', '==', this.customerId)
-    );
-    this.customer = collectionData(q).pipe(
-      tap((cust) =>
+    this.customer = docSnapshots(
+      doc(this.db, `customers/${this.customerId}`)
+    ).pipe(
+      tap((doc) => {
+        const data = doc.data()!;
         this.seo.generateTags({
-          title: cust[0]['name'],
-          description: cust[0]['bio'],
-          image: cust[0]['image'],
-        })
-      )
+          title: data['name'],
+          description: data['description'],
+          image: data['image'],
+        });
+      })
     );
   }
 }
