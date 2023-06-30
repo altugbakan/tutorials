@@ -27,7 +27,6 @@ const modules = [
   MatSidenavModule,
   MatListModule,
   MatMenuModule,
-  MatIconModule,
   MatCardModule,
   MatFormFieldModule,
   MatInputModule,
