@@ -31,6 +31,10 @@ Various tutorial projects for languages, frameworks, and systems that I have bee
 
 - [tic-tac-toe](./typescript/angular/tic-tac-toe/): A tic-tac-toe game built with [Angular Material](https://material.angular.io/).
 
+### [C#](https://learn.microsoft.com/en-us/dotnet/csharp/)
+
+- [contoso-pizza](./csharp/contonso-pizza/): Backend for a Pizza Shop that uses [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/).
+
 ### [Full Stack](https://www.coursera.org/articles/full-stack-developer):
 
 - [super-hero](./full-stack/super-hero/): An app that lists Super-Hero data.
