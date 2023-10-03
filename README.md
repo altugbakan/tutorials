@@ -35,6 +35,10 @@ Various tutorial projects for languages, frameworks, and systems that I have bee
 
 - [contoso-pizza](./csharp/contonso-pizza/): Backend for a Pizza Shop that uses [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/).
 
+### [Python](https://www.python.org/):
+
+- [polls-app](./python/polls-app/): A simple poll website built with [Django](https://www.djangoproject.com/).
+
 ### [Full Stack](https://www.coursera.org/articles/full-stack-developer):
 
 - [super-hero](./full-stack/super-hero/): An app that lists Super-Hero data.
